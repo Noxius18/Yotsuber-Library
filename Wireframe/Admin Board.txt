@@ -1,0 +1,29 @@
++---------------------------------------------------------+
+|                      [Header]                           |
+| Logo            Beranda | Daftar Buku | Tambah Buku     |
+| Pengelolaan Pengguna | Profil Admin | Logout            |
+|---------------------------------------------------------|
+|                     [Sidebar]                           |
+| Beranda                                                  |
+| Daftar Buku                                              |
+| Tambah Buku                                              |
+| Pengelolaan Pengguna                                     |
+| Profil Admin                                             |
+|---------------------------------------------------------|
+|                      [Konten Utama]                     |
+| Statistik                                                |
+| [Grafik/Statistik]                                       |
+|                                                         |
+| Pengelolaan Buku                                         |
+| [Tabel/Daftar Buku]                                     |
+|                                                         |
+| Pengelolaan Pengguna                                     |
+| [Tabel/Daftar Pengguna]                                 |
+|                                                         |
+| Laporan                                                  |
+| [Tabel/Daftar Laporan]                                  |
+|                                                         |
++---------------------------------------------------------+
+|                      [Footer]                           |
+|             Hak Cipta &copy; 2024 Perpustakaan Online    |
++---------------------------------------------------------+

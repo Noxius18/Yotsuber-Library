@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root{
+    font-family: "Plus Jakarta Sans", Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 428px) {
+    .navbar-toggler {
+        margin-left: auto;
+        margin-top: 3px;
+    }
+
+    .barokah{
+        font-size: 20px;
+        font-family:'Times New Roman', Times, serif;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+
+    .library{
+        width: 10px;
+        height: 10px;
+    }
+
+    .offcanvas-body{
+        /* font-family: 'Times New Roman'; */
+        font-size: 20px;
+        background-color: rgb(215, 218, 221);
+    }
+
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 8%;
+    }
+
+    .card-body{
+        margin-top: 10px;
+    }
+
+    .footer-conten{
+        /* font-family: 'Times New Roman', Times, serif; */
+        font-weight: bold;
+    }
+
+    .hak{
+        /* font-family: 'Times New Roman', Times, serif; */
+        font-weight: bold;
+        text-align: center;
+        padding-top: 15px;
+    }
+}
+
+.barokah{
+    font-size: 30px;
+    /* font-family:'Times New Roman', Times, serif; */
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+/* #navbar1{
+    background-color: #95D2B3;
+} */
+
+
+.header1{
+    font-size: 30px;
+    /* font-family:'Cochin'; */
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.library{
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+}
+
+/* /* h4{
+    font-family: 'Times New Roman';
+}  */
+
+.offcanvas-body{
+    /* font-family: 'Times New Roman'; */
+    font-size: 20px;
+}
+
+.offcanvas-header{
+    /* background-color: #95D2B3; */
+    background-color: #4CB050;
+}
+
+.offcanvas-title{
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.navbar-nav .nav-link {
+    color: black; /* Warna default */
+    border-radius: 10px;
+}
+
+.navbar-nav .nav-link:hover{
+    /* color: gold; */
+    color: #8BC34A;
+    background-color:white;
+    border-radius: 10px;
+}
+
+ul{
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.card {
+    width: 100% !important;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.card-body{
+    height: 80%;
+}
+
+/* #col-1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+#col-2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17.6px;
+} */
+
+/* .card-title{
+    font-family: 'Times New Roman', Times, serif;
+} */
+
+.btn{
+    text-align: center;
+}
+
+footer{
+    /* background-color: #95D2B3; */
+    width: 100%;
+    /* bottom: 0px; */
+    height: 50px;
+}
+
+.hak{
+    /* font-family: 'Times New Roman', Times, serif; */
+    font-weight: bold;
+    text-align: center;
+    padding-top: 15px;
+}

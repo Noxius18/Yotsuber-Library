@@ -1,0 +1,26 @@
++---------------------------------------------------------+
+|                      [Header]                           |
+| Logo            Beranda | Daftar Buku | Tambah Buku     |
+|                 Profil | Logout                          |
+|---------------------------------------------------------|
+|                     [Sidebar]                           |
+| Beranda                                                  |
+| Daftar Buku Dipinjam                                     |
+| Riwayat Peminjaman                                       |
+| Profil                                                   |
+|---------------------------------------------------------|
+|                      [Konten Utama]                     |
+| Selamat Datang, [Nama Pengguna]!                         |
+|                                                         |
+| Daftar Buku Terbaru                                      |
+| [Thumbnail] [Judul Buku] [Tanggal Dipinjam]             |
+| [Thumbnail] [Judul Buku] [Tanggal Dipinjam]             |
+|                                                         |
+| Riwayat Peminjaman                                       |
+| [Judul Buku] [Tanggal Pinjam] [Tanggal Kembali]          |
+| [Judul Buku] [Tanggal Pinjam] [Tanggal Kembali]          |
+|                                                         |
++---------------------------------------------------------+
+|                      [Footer]                           |
+|             Hak Cipta &copy; 2024 Perpustakaan Online    |
++---------------------------------------------------------+

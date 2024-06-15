@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Peminjaman</title>
+</head>
+<body>
+    <h2>Formulir Peminjaman</h2>
+    <form action="proses_peminjaman.php" method="post">
+        <label for="nama">Nama:</label><br>
+        <input type="text" id="nama" name="nama" required><br>
+        
+        <label for="nomor_identitas">Nomor Identitas:</label><br>
+        <input type="text" id="nomor_identitas" name="nomor_identitas" required><br>
+        
+        <label for="tanggal_pinjam">Tanggal Peminjaman:</label><br>
+        <input type="date" id="tanggal_pinjam" name="tanggal_pinjam" required><br>
+        
+        <label for="tanggal_kembali">Tanggal Pengembalian:</label><br>
+        <input type="date" id="tanggal_kembali" name="tanggal_kembali" required><br>
+        
+        <label for="keterangan">Keterangan:</label><br>
+        <textarea id="keterangan" name="keterangan" rows="4" cols="50"></textarea><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

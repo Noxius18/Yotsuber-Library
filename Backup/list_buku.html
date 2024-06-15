@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Perpustakaan</title>
+    <link rel="stylesheet" href="../Assets/CSS/list_buku.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar1">
+        <div class="container-fluid">
+        <h1 class="perpus">PERPUSTAKAAN BAROKAH</h1>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                <h4 class="offcanvas-title" id="offcanvasNavbarLabel">PERPUSTAKAAN BAROKAH</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+
+          <div class="offcanvas-body" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Dashboard </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Borrow Books</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Return Book</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Logout</a>
+                </li>
+              </ul>
+        </div>
+      </nav>
+
+<div class="card-container">
+<div class="container">
+    <div class="row">
+        <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://marketplace.canva.com/EAFQkSHF0OM/2/0/1003w/canva-coklat-hijau-illustrasi-pemandangan-sampul-buku-kedamaian-HdpxHRHUaPc.jpg" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Kedamaian</h5>
+                    <a href="#" class="btn btn-primary">Pinjam Buku</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://marketplace.canva.com/EAFFodQoOM4/1/0/1003w/canva-inspirasi-contoh-sampul-buku-sang-raja-hutan-yPJGHyQCNeU.jpg" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Sang Raja Hutan</h5>
+                    <a href="#" class="btn btn-primary">Pinjam Buku</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-cTuT8xTiYNjV1-3zEk0Pv9lB8TGD1hV7bA&s" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <h5 class="card-title" id="col-2">Banyak Biacara Sedikit Bekerja</h5>
+                    <a href="#" class="btn btn-primary">Pinjam Buku</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://marketplace.canva.com/EAFFDGFkcdM/1/0/1003w/canva-hijau-biru-sederhana-ruang-sunyi-sampul-buku-novel-K3WxwPzlPyk.jpg" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Ruang Sunyi</h5>
+                    <a href="#" class="btn btn-primary">Pinjam Buku</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://marketplace.canva.com/EAFZBDm_L0g/1/0/1003w/canva-colorful-illustrasi-buku-dongeng-bergambar-book-cover-92AMWItFWCk.jpg" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <h5 class="card-title" id="col-1" >Peri Bunga & Rumah kecilnya</h5>
+                    <a href="#" class="btn btn-primary">Pinjam Buku</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://marketplace.canva.com/EAFWGlbDHus/2/0/1003w/canva-hijau-biru-dan-kuning-moderen-illustrasi-latar-belakang-keluarga-sampul-buku-kebersamaan-keluarga-muslim-w9w9p5XmLtE.jpg" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <h5 class="card-title" id="col-1">kebersamaan Keluarga Muslim</h5>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://marketplace.canva.com/EAEzgRIpVhM/2/0/1003w/canva-hijau-ilustrasi-cerita-anak-sampul-buku-cx2fF7FRdEc.jpg" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <h5 class="card-title">kura-Kura Yang Malang</h5>
+                    <a href="#" class="btn btn-primary">Pinjam Buku</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUFZgWCt6ZTHVAaMKBMITKHcu89udJXsxW5g&s" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <h5 class="card-title">legenda Rumah Kosong</h5>
+                    <a href="#" class="btn btn-primary">Pinjam Buku</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://marketplace.canva.com/EAFMRe-O2xo/1/0/1003w/canva-sampul-buku-cerita-melangkah-bersama-0-FIp7XxdnI.jpg" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Melangkah Bersama</h5>
+                    <a href="#" class="btn btn-primary">Pinjam Buku</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://marketplace.canva.com/EAFJWTo4s2Q/1/0/1003w/canva-inspirasi-contoh-sampul-buku-kesetiaan-seorang-wanita-dv1jeBVGCro.jpg" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <h5 class="card-title">kesetiaan Seorang Wanita</h5>
+                    <a href="#" class="btn btn-primary">Pinjam Buku</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4D5ySe2zADFpOCHNXWzWcZH86cqbBeJQPdg&s" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <h5 class="card-title" id="col-1">Pengantar Ilmu Sosial Budaya</h5>
+                    <a href="#" class="btn btn-primary align-items-center">Pinjam Buku</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://marketplace.canva.com/EAFJWX-jHsE/2/0/1003w/canva-hijau-inspirasi-sampul-buku-setenang-kaktus-SqWt_yHVpUY.jpg" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Setenang kaktus</h5>
+                    <a href="#" class="btn btn-primary">Pinjam Buku</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<footer>
+    <div class="hak">
+        <p>&copy; Kelompok Pembantai UAS</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

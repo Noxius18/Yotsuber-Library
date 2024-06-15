@@ -1,0 +1,29 @@
++---------------------------------------------------------+
+|                      [Header]                           |
+| Logo Perpustakaan    Beranda | Daftar Buku | Tentang     |
+|                      Kontak | Login/Register             |
+|---------------------------------------------------------|
+|                   [Hero Section]                        |
+| [Ilustrasi/Gambar]                                      |
+| Selamat Datang di Perpustakaan Online                  |
+| Temukan dan pinjam buku favorit Anda secara online      |
+|---------------------------------------------------------|
+|                     [Konten Utama]                     |
+| [Cari Buku]  [_____________________] [Cari]            |
+|                                                         |
+| Daftar Buku Populer                                     |
+| [Kartu Buku] [Kartu Buku] [Kartu Buku]                 |
+|                                                         |
+| Kategori Buku                                           |
+| [Kategori] [Kategori] [Kategori] [Kategori]             |
+|                                                         |
+| Fitur Unggulan                                          |
+| [Rekomendasi Buku] [Buku Terlaris] [Buku Baru]         |
+|                                                         |
+| Peta Lokasi                                             |
+| [Peta]                                                  |
+|---------------------------------------------------------|
+|                      [Footer]                           |
+| Informasi Hak Cipta &copy; 2024 Perpustakaan Online     |
+| Tautan Sosial Media | Tentang Kami | Hubungi Kami      |
++---------------------------------------------------------+
