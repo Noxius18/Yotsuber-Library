@@ -6,15 +6,15 @@ $db_name = 'Perpustakaan';
 
 $conn = new mysqli($db_host, $db_user, $db_pass, $db_name);
 
+//Konek ke SQLite
 // try {
-//     // $conn = new mysqli($db_host, $db_user, $db_pass, $db_name);
-
-//     if ($conn->connect_error) {
-//         throw new Exception("Koneksi Gagal: " . $conn->connect_error);
+//     $db = new SQLite3("../db/perpus.sqlite");
+//     if(!$db){
+//         die("Database gagal tersambung coy\n");
 //     }
-
-//     echo "Koneksi Berhasil";
-// } catch (Exception $e) {
-//     echo "Error: " . $e->getMessage();
+//     else{
+//         echo "Database terkoneksi mase\n";
+//     }
+// }   catch(Exception $e) {
+//         die("Koneksi masih gagal mase ". $e->getMessage());
 // }
-?>
