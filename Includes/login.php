@@ -19,7 +19,7 @@ if (isset($_POST['login'])) {
             $_SESSION["userID"] = $row["ID_Member"];
             $_SESSION["namaDepan"] = $row["Nama_Depan"];
             $_SESSION["namaBelakang"] = $row["Nama_Belakang"];
-            header("Location: ../Pages/userdash.html");
+            header("Location: ../Pages/userDashboard.php");
             exit;
         } else {
             $error = true;
