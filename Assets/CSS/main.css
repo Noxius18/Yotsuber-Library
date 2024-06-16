@@ -22,25 +22,14 @@ header{
     height: 100px;
 }
 
-/* .footer {
-    position: relative;
-    bottom: 0px;
-    width: 100%;
-} */
-
-.card-img-top {
-    width: 100%;
-    height: 50%;
-    /* max-height: 300px; */
-    /* object-fit: cover; */
-}
-
 .font-yotsuba {
     font-family: "Plus Jakarta Sans", Arial, Helvetica, sans-serif;
 }
 
-.font-yotsuba2 {
-    font-family: "FOT-Yuruka Std", "Plus Jakarta Sans", Arial, Helvetica, sans-serif;
+.center-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .jumbotron {

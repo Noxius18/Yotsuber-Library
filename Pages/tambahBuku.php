@@ -25,7 +25,7 @@
           <div class="offcanvas-body" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Dashboard</a>
+                  <a class="nav-link" href="adminDashboard.php">Dashboard</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Kelola Buku</a>
@@ -34,7 +34,7 @@
                   <a class="nav-link" href="#">Pengembalian Buku</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Logout</a>
+                  <a class="nav-link" href="../Includes/logout.php">Logout</a>
                 </li>
               </ul>
         </div>

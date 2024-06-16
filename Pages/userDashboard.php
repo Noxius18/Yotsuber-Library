@@ -6,6 +6,7 @@
     <title>Dashboard User</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../Assets/CSS/main.css">
+    <link rel="stylesheet" href="../Assets/CSS/list_buku.css">
 </head>
 <body class="font-yotsuba">
     <nav class="navbar navbar-expand-md warna-yotsuba fixed-top">
@@ -22,13 +23,13 @@
           <div class="offcanvas-body" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
                 <li class="nav-item">
-                  <a class="nav-link" href="add_book.html">Pinjam</a>
+                  <a class="nav-link" href="listBuku.php">Pinjam</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Pengembalian Buku</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Logout</a>
+                  <a class="nav-link" href="../Includes/logout.php">Logout</a>
                 </li>
             </ul>
           </div>
@@ -41,12 +42,15 @@
         </div>
     </header>
 
-    <div class="container-fluid mt-5">
-        <h2 class="mb-4">Buku yang Sedang Kamu Pinjam</h2>
-        <div class="row">
-            <?php require '../Includes/userDashboard.php'; ?>
+    <section>
+      <div class="card-container">
+        <div class="container">
+            <div class="row justify-content-center">
+              <?php include '../Includes/userDashboard.php'; ?>
+            </div>
         </div>
-    </div>
+      </div>
+    </section>
 
     <div class="text-center p-3 footer warna-yotsuba text-black">
         &copy 2024 Yotsuba Jisho!
