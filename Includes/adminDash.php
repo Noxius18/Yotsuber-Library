@@ -32,7 +32,7 @@ else{
     Status_Pinjam.status AS status_pinjam FROM Status_Pinjam 
     INNER JOIN Pinjam ON Status_Pinjam.ID_Peminjaman=Pinjam.ID_Peminjaman
     INNER JOIN Member ON Pinjam.ID_Member=Member.ID_Member 
-    INNER JOIN Katalog_Buku ON Pinjam.ID_Katalog=Katalog_Buku.ID_Katalog;';
+    INNER JOIN Katalog_Buku ON Pinjam.ID_Katalog=Katalog_Buku.ID_Katalog';
 
     $result = $conn->query($sql);
 }
