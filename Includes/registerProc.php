@@ -21,7 +21,7 @@ if (isset($_POST['register'])) {
     if ($stmt) {
         $stmt->bind_param("sssss", $email, $password, $namaDepan, $namaBelakang, $phone);
         if ($stmt->execute()) {
-            header("Location: ../login.html");
+            header("Location: ../login.php");
             exit;
         } else {
             echo "Error: " . $stmt->error;
@@ -34,4 +34,3 @@ if (isset($_POST['register'])) {
     }
 }
 $conn->close();
-?>

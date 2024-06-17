@@ -9,7 +9,7 @@
 </head>
 <body style="background-image: url(Assets/Images/Library2.png);">
     <div class="container">
-        <form action="Includes/register.php" method="POST">
+        <form action="Includes/registerProc.php" method="POST">
             <h1>REGISTER MEMBER</h1>
 
             <div class="box-input">

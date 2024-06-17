@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="container">
-        <form action="Includes/login.php" method="POST">
+        <form action="Includes/loginProc.php" method="POST">
             <h1>LOGIN</h1>
 
             <div class="box-input">
