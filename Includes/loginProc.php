@@ -7,10 +7,10 @@ if (isset($_POST['login'])) {
     $email = $_POST["Email"];
     $pass = $_POST["Password"];
 
-    $stmt = $conn->prepare("SELECT * FROM Member WHERE Email = ?");
-    $stmt->bind_param('s', $email);
-    $stmt->execute();
-    $result = $stmt->get_result();
+    $sql = $conn->prepare("SELECT * FROM Member WHERE Email = ?");
+    $sql->bind_param('s', $email);
+    $sql->execute();
+    $result = $sql->get_result();
 
     if ($result->num_rows === 1) {
         $row = $result->fetch_assoc();
@@ -19,13 +19,26 @@ if (isset($_POST['login'])) {
             $_SESSION["userID"] = $row["ID_Member"];
             $_SESSION["namaDepan"] = $row["Nama_Depan"];
             $_SESSION["namaBelakang"] = $row["Nama_Belakang"];
+            $_SESSION["Role"] = "Member";
             header("Location: ../Pages/userDashboard.php");
             exit;
-        } else {
-            $error = true;
+        } 
+    } 
+
+    $sql = $conn->prepare("SELECT * FROM Admin WHERE Username = ?");
+    $sql->bind_param("s", $email);
+    $sql->execute();
+    $result = $sql->get_result();
+
+    if($result->num_rows === 1) {
+        $row = $result->fetch_assoc();
+
+        if(password_verify($pass, $row["Pass"])) {
+            $_SESSION["userID"] = $row["Username"];
+            $_SESSION["Role"] = "Admin";
+            header("Location: ../Pages/adminDashboard.php");
+            exit;
         }
-    } else {
-        $error = true;
     }
 
     if (isset($error) && $error) {

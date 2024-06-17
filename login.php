@@ -13,7 +13,7 @@
             <h1>LOGIN</h1>
 
             <div class="box-input">
-                <input type="email" placeholder="Email" name="Email" required>
+                <input type="text" placeholder="Email" name="Email" required>
                 <i class='bx bx-user-circle'></i>
             </div>
 

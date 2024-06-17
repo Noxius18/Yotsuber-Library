@@ -1,3 +1,10 @@
+<?php
+session_start();
+if (!isset($_SESSION["userID"]) || ($_SESSION["Role"] !== "Admin" && $_SESSION["Role"] !== "Member")) {
+  header("Location: ../login.php");
+  exit();
+}
+?>
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -15,26 +22,45 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-            <a href="#" class="navbar-brand offcanvas-title">Yotsuba Jisho!</a>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-      <div class="offcanvas-body" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
-            <li class="nav-item">
-              <a class="nav-link" href="admindash.html">Dashboard </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Borrow Books</a>
-              </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Return Book</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Logout</a>
-            </li>
-          </ul>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+        <a href="#" class="navbar-brand offcanvas-title">Yotsuba Jisho!</a>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+          <?php
+          if(isset($_SESSION["userID"]) && $_SESSION["Role"] === "Member"){
+            echo '<li class="nav-item">';
+            echo '<a class="nav-link" href="userDashboard.php">Dashboard</a>';
+            echo '</li>';
+            echo '<li class="nav-item">';
+            echo '<a class="nav-link" href="listBuku.php">Pinjam Buku</a>';
+            echo '</li>';
+            echo '<li class="nav-item">';
+            echo '<a class="nav-link" href="kembalikanUser.php">Kembalikan Buku</a>';
+            echo '</li>';
+          }
+
+          if(isset($_SESSION["userID"]) && $_SESSION["Role"] === "Admin"){
+            echo '<li class="nav-item">';
+            echo '<a class="nav-link" href="adminDashboard.php">Dashboard</a>';
+            echo '</li>';
+            echo '<li class="nav-item">';
+            echo '<a class="nav-link" href="tambahBuku.php">Kelola Buku</a>';
+            echo '</li>';
+            echo '<li class="nav-item">';
+            echo '<a class="nav-link" href="listBuku.php">List Buku</a>';
+            echo '</li>';
+            echo '<li class="nav-item">';
+            echo '<a class="nav-link" href="kembalikanAdmin.php">Pengembalian Buku</a>';
+            echo '</li>';
+          }
+          ?>
+          <li class="nav-item">
+            <a  class="nav-link" href="../Includes/logout.php">Logout</a>
+          </li>
+      </ul>
     </div>
   </nav>
 
@@ -55,7 +81,7 @@
   </section>
   <!-- Footer -->
   <div class="text-center p-3 warna-yotsuba">
-    © 2020 Copyright: Yotsuba Jisho!
+    © 2024 Copyright: Yotsuba Jisho!
   </div>
 
 

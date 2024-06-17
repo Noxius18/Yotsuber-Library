@@ -11,22 +11,25 @@
 <body class="font-yotsuba">
     <nav class="navbar navbar-expand-md warna-yotsuba fixed-top">
         <div class="container-fluid">
-          <a href="#" class="navbar-brand font-yotsuba2">Yotsuba Jisho!</a>
+          <a href="home.php" class="navbar-brand font-yotsuba2">Yotsuba Jisho!</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
               <div class="offcanvas-header">
-              <a href="#" class="navbar-brand offcanvas-title">Yotsuba Jisho!</a>
+              <a href="home.php" class="navbar-brand offcanvas-title">Yotsuba Jisho!</a>
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
                 <li class="nav-item">
-                  <a class="nav-link" href="listBuku.php">Pinjam</a>
+                  <a class="nav-link" href="userDashboard.php">Dashboard</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Pengembalian Buku</a>
+                  <a class="nav-link" href="listBuku.php">Pinjam Buku</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="kembalikanUser.php">Pengembalian Buku</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="../Includes/logout.php">Logout</a>

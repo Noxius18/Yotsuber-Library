@@ -1,3 +1,11 @@
+<?php
+session_start();
+if(!isset($_SESSION["userID"]) || $_SESSION["Role"] !== "Admin"){
+    header("Location: ../login.php");
+    exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -13,13 +21,13 @@
     <!-- Mulai Navbar -->
     <nav class="navbar navbar-expand-md warna-yotsuba fixed-top">
         <div class="container-fluid">
-          <a href="#" class="navbar-brand font-yotsuba2">Yotsuba Jisho!</a>
+          <a href="home.php" class="navbar-brand font-yotsuba2">Yotsuba Jisho!</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
-                <a href="#" class="navbar-brand offcanvas-title">Yotsuba Jisho!</a>
+                <a href="home.php" class="navbar-brand offcanvas-title">Yotsuba Jisho!</a>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
           <div class="offcanvas-body" id="navbarSupportedContent">
@@ -28,10 +36,13 @@
                   <a class="nav-link" href="adminDashboard.php">Dashboard</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Kelola Buku</a>
-                  </li>
+                    <a class="nav-link" href="tambahBuku.php">Kelola Buku</a>
+                </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Pengembalian Buku</a>
+                    <a class="nav-link" href="listBuku.php">List Buku</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="kembalikanAdmin.php">Pengembalian Buku</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="../Includes/logout.php">Logout</a>
