@@ -15,7 +15,7 @@ if(!isset($_SESSION['userID']) || $_SESSION['Role'] !== "Member"){
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../Assets/CSS/main.css">
 </head>
-<body font-yotsuba>
+<body class="font-yotsuba">
   <nav class="navbar navbar-expand-md warna-yotsuba fixed-top">
     <div class="container-fluid">
       <a href="home.php" class="navbar-brand font-yotsuba2">Yotsuba Jisho!</a>
@@ -29,9 +29,11 @@ if(!isset($_SESSION['userID']) || $_SESSION['Role'] !== "Member"){
       </div>
       <div class="offcanvas-body" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
-            <li class="nav-item">
-              <a class="nav-link" href="userDashboard.php">Dashboard</a>
-            </li>
+            <?php 
+            echo '<li class="nav-item">';
+            echo '<a class="nav-link" href="userDashboard.php">'.$_SESSION["namaDepan"]. ' '. $_SESSION["namaBelakang"] .'</a>';
+            echo '</li>';
+            ?>
             <li class="nav-item">
               <a class="nav-link" href="listBuku.php">Pinjam Buku</a>
             </li>
@@ -54,19 +56,14 @@ if(!isset($_SESSION['userID']) || $_SESSION['Role'] !== "Member"){
 
 
   <div class="container mt-5">
-    <h3>Buku yang kamu Pinjam</h3>
-    <table class="table table-striped">
-        <thead>
-            <tr>
-                <th>Judul Buku</th>
-                <th>Cover</th>
-                <th>Aksi</th>
-            </tr>
-        </thead>
-        <tbody>
-            <?php require '../Includes/kembaliUserProc.php' ?>
-        </tbody>
-    </table>
+    <h2>Konfirmasi Pengembalian Buku</h2>
+      <div class="row">
+          <?php require '../Includes/returnProcess.php' ?>
+      </div>
+  </div>
+
+  <div class="text-center p-3 footer warna-yotsuba text-black fixed-bottom">
+        &copy 2024 Yotsuba Jisho!
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

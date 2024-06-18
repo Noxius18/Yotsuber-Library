@@ -2,6 +2,19 @@
 /* @import url('https://db.onlinewebfonts.com/c/2b3966678f6a1c8c8be202caeb49d95a?family=FOT-Yuruka+Std');  */
 
 
+/* .card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.card img {
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+    margin-right: 200px;
+} */
+
 .navbar-nav .nav-link {
     color: black;
     border-radius: 10px;

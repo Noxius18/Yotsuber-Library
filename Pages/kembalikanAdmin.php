@@ -54,19 +54,11 @@ if(!isset($_SESSION["userID"]) || $_SESSION["Role"] !== "Admin"){
         </div>
     </header>
 
-    <div class="container-fluid mt-5">
-        <table class="table table-striped mt-4">
-            <thead>
-                <tr>
-                    <th>Nama Member</th>
-                    <th>Judul Buku</th>
-                    <th>Aksi</th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php require '../Includes/kembaliAdminProc.php' ?>
-            </tbody>
-        </table>
+    <div class="container mt-5">
+        <h2>Konfirmasi Pengembalian Buku</h2>
+        <div class="row">
+            <?php require '../Includes/confirmProcess.php' ?>
+        </div>
     </div>
 
     <div class="text-center p-3 footer warna-yotsuba text-black fixed-bottom">

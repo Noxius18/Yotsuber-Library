@@ -32,7 +32,7 @@ if (!isset($_SESSION["userID"]) || ($_SESSION["Role"] !== "Admin" && $_SESSION["
           <?php
           if(isset($_SESSION["userID"]) && $_SESSION["Role"] === "Member"){
             echo '<li class="nav-item">';
-            echo '<a class="nav-link" href="userDashboard.php">Dashboard</a>';
+            echo '<a class="nav-link" href="userDashboard.php">'.$_SESSION["namaDepan"]. ' '. $_SESSION["namaBelakang"] .'</a>';
             echo '</li>';
             echo '<li class="nav-item">';
             echo '<a class="nav-link" href="listBuku.php">Pinjam Buku</a>';

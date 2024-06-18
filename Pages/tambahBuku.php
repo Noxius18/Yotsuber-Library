@@ -47,7 +47,7 @@ if(!isset($_SESSION["userID"]) || $_SESSION["Role"] !== "Admin"){
                 <li class="nav-item">
                   <a class="nav-link" href="../Includes/logout.php">Logout</a>
                 </li>
-              </ul>
+            </ul>
         </div>
       </nav>
 
