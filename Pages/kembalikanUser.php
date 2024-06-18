@@ -56,7 +56,7 @@ if(!isset($_SESSION['userID']) || $_SESSION['Role'] !== "Member"){
 
 
   <div class="container mt-5">
-    <h2>Konfirmasi Pengembalian Buku</h2>
+    <h2>Pengajuan Pengembalian Buku</h2>
       <div class="row">
           <?php require '../Includes/returnProcess.php' ?>
       </div>

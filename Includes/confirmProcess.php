@@ -29,7 +29,7 @@ Katalog_Buku.Cover_Buku AS Cover FROM Pinjam
 INNER JOIN Member ON Pinjam.ID_Member=Member.ID_Member 
 INNER JOIN Katalog_Buku ON Pinjam.ID_Katalog=Katalog_Buku.ID_Katalog
 INNER JOIN Status_Pinjam ON Status_Pinjam.ID_Status=Pinjam.ID_Peminjaman 
-WHERE Status_Pinjam.status = 'Sedang Dipinjam'";
+WHERE Status_Pinjam.sts = 'Sedang Dipinjam'";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {

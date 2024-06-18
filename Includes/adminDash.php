@@ -11,7 +11,7 @@ if($search){
     Pinjam.Tgl_Peminjaman AS Tgl_Peminjaman, 
     Pinjam.Bts_Peminjaman AS Bts_Peminjaman, 
     Pinjam.Tgl_Pengembalian AS Tgl_Pengembalian,
-    Status_Pinjam.status AS status_pinjam FROM Status_Pinjam 
+    Status_Pinjam.sts AS status_pinjam FROM Status_Pinjam 
     INNER JOIN Pinjam ON Status_Pinjam.ID_Peminjaman=Pinjam.ID_Peminjaman 
     INNER JOIN Member ON Pinjam.ID_Member=Member.ID_Member 
     INNER JOIN Katalog_Buku ON Pinjam.ID_Katalog=Katalog_Buku.ID_Katalog
@@ -29,7 +29,7 @@ else{
     Pinjam.Tgl_Peminjaman AS Tgl_Peminjaman, 
     Pinjam.Bts_Peminjaman AS Bts_Peminjaman, 
     Pinjam.Tgl_Pengembalian AS Tgl_Pengembalian,
-    Status_Pinjam.status AS status_pinjam FROM Status_Pinjam 
+    Status_Pinjam.sts AS status_pinjam FROM Status_Pinjam 
     INNER JOIN Pinjam ON Status_Pinjam.ID_Peminjaman=Pinjam.ID_Peminjaman
     INNER JOIN Member ON Pinjam.ID_Member=Member.ID_Member 
     INNER JOIN Katalog_Buku ON Pinjam.ID_Katalog=Katalog_Buku.ID_Katalog';

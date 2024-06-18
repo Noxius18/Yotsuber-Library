@@ -12,11 +12,20 @@ Katalog_Buku.Cover_Buku AS Cover,
 Pinjam.Tgl_Peminjaman AS Tanggal FROM Pinjam
 INNER JOIN Katalog_Buku ON Pinjam.ID_Katalog=Katalog_Buku.ID_Katalog
 INNER JOIN Status_Pinjam ON Pinjam.ID_Peminjaman=Status_Pinjam.ID_Peminjaman
-WHERE Pinjam.ID_Member = ? AND Status_Pinjam.status = "Sedang Dipinjam"';
+WHERE Pinjam.ID_Member = ? AND Status_Pinjam.sts = "Sedang Dipinjam"';
 $stmt = $conn->prepare($sql);
 $stmt->bind_param('i', $userID);
 $stmt->execute();
 $result = $stmt->get_result();
+
+//Proses Update status Pengajuan
+if(isset($_POST['submit'])){
+    $idPeminjaman = $_POST['idPeminjaman'];
+    $updateQuery = 'UPDATE Status_Pinjam SET sts = "Sedang Diajukan" WHERE ID_Peminjaman = ?';
+    $updateStmt = $conn->prepare($updateQuery);
+    $updateStmt->bind_param('i', $idPeminjaman);
+    $updateStmt->execute();
+}
 
 if ($result->num_rows > 0) {
     while ($row = $result->fetch_assoc()) {
@@ -33,9 +42,9 @@ if ($result->num_rows > 0) {
         echo '<strong>Penulis: </strong>'. htmlspecialchars($row['Penulis']) .'<br>';
         echo '<strong>Tanggal Peminjaman: </strong>'. htmlspecialchars($row['Tanggal']);
         echo '</p>';
-        echo '<form method="POST" action="confirm_return.php">';
-        echo '<input type="hidden" name="peminjaman_id" value="1">';
-        echo '<button type="submit" class="btn btn-primary">Ajukan Pengembalian</button>';
+        echo '<form method="POST" action="">';
+        echo '<input type="hidden" name="idPeminjaman" value="'.$row['pinjamID'].'">';
+        echo '<button type="submit" name="submit" class="btn btn-primary">Ajukan Pengembalian</button>';
         echo '</form>';
         echo '</div>';
         echo '</div>';
