@@ -14,21 +14,6 @@ if(!isset($_SESSION["userID"]) || $_SESSION["Role"] !== "Admin"){
     <title>Pengembalian Buku</title>
     <link rel="stylesheet" href="../Assets/CSS/main.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <style>
-    .custom-alert {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 1050;
-    display: none;
-    width: 300px;
-    padding: 15px;
-    background-color: #d4edda;
-    color: #155724;
-    border: 1px solid #c3e6cb;
-    border-radius: 5px;
-}
-    </style>
 </head>
 <body class="font-yotsuba">
   <nav class="navbar navbar-expand-md warna-yotsuba fixed-top">

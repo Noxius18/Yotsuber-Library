@@ -74,7 +74,35 @@ if (!isset($_SESSION["userID"]) || ($_SESSION["Role"] !== "Admin" && $_SESSION["
     <div class="card-container">
       <div class="container">
           <div class="row">
-            <?php include '../Includes/listBook.php'; ?>
+            <?php include '../Includes/listBook.php'; 
+            if($res->num_rows > 0){
+              while($row = $res->fetch_assoc()){
+                  echo '<div class="col-md-3 col-sm-6 mb-4">';
+                  echo '<div class="card" style="width: 18rem;">';
+                  echo '<img src="../Assets/Images/Cover_Buku/' . htmlspecialchars($row["Cover_Buku"]) . '" class="card-img-top" alt="Cover Buku">';
+                  echo '<div class="card-body text-center">';
+                  echo '<h5 class="card-title font-yotsuba">' . htmlspecialchars($row["Judul"]) . '</h5>';
+                  echo '<p class="card-text">' . htmlspecialchars($row["Penulis"]) . '</p>';
+                  echo '<p class="card-text">Jumlah Tersisa: ' . $row['Jumlah'] . '</p>';
+          
+                  echo '<a href="#" class="btn btn-primary">Detail Buku</a>';
+                  
+                  echo '<form style="margin-top: 10px;" method="POST" action="">';
+                  echo '<input type="hidden" name="idBuku" value="'.$row["ID_Katalog"]. '">';
+                  echo '<button type="submit" name="submit" class="btn btn-primary">Pinjam</button>';
+                  echo '</form>';
+                  
+                  echo '</div>';
+                  echo '</div>';
+                  echo '</div>';
+              }
+          }
+          else {
+              echo "Tidak ada buku";
+          }
+          
+            
+            ?>
           </div>
       </div>
     </div>
