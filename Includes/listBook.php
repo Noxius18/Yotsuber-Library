@@ -16,4 +16,4 @@ else {
     $sql = 'SELECT * FROM Katalog_Buku';
     $res = $conn->query($sql);
 }
-// $conn->close();
+$conn->close();

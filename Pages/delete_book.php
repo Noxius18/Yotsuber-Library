@@ -43,4 +43,4 @@ if (isset($_GET['id'])) {
 
 // Menutup koneksi
 $conn->close();
-?>
+

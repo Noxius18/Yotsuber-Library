@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar, .navbar-yotsuba {
+    background-color: #4CB050; /* lime green */
+    color: white;
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.navbar .logo h1 {
+    font-size: 24px;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar nav ul li {
+    display: inline;
+}
+
+.navbar nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+.navbar nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+}
+
+/* Book Detail Section */
+.book-detail {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.book-info {
+    display: flex;
+    align-items: flex-start;
+}
+
+.book-info img {
+    width: 300px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.book-meta {
+    max-width: 600px;
+}
+
+.book-meta h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.book-meta p {
+    margin: 5px 0;
+}
+
+.borrow-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CB050; /* lime green */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.borrow-btn:hover, .warna-yotsuba:hover {
+    background-color: #3d8f40; /* dark green */
+}
+
+.book-description {
+    margin-top: 40px;
+}
+
+.book-description h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.book-description p {
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #4CB050;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: text-decoration 0.3s;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Yotsuba Specific Classes */
+.font-yotsuba {
+    font-family: "Plus Jakarta Sans", Arial, Helvetica, sans-serif;
+}
+
+.warna-yotsuba {
+    background-color: #4CB050;
+}

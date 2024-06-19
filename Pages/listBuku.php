@@ -87,7 +87,7 @@ if (!isset($_SESSION["userID"]) || ($_SESSION["Role"] !== "Admin" && $_SESSION["
           
                   echo '<a href="#" class="btn btn-primary">Detail Buku</a>';
                   
-                  echo '<form style="margin-top: 10px;" method="POST" action="">';
+                  echo '<form style="margin-top: 10px;" method="POST" action="../Includes/pinjamBuku.php">';
                   echo '<input type="hidden" name="idBuku" value="'.$row["ID_Katalog"]. '">';
                   echo '<button type="submit" name="submit" class="btn btn-primary">Pinjam</button>';
                   echo '</form>';
